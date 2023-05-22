@@ -37,7 +37,7 @@ Please [cite this project as described here](/CITATION.md).
 ## Running the code
 
 1. Import dependencies as described above
-2. Generate a dummy dataset using [run_model.py](script/random_datat_generator.py)
+2. Generate a dummy dataset using [random_data_generator.py](script/random_data_generator.py)
 3. Change the path in the [run_model.py](script/run_model.py) to the relative location of the dummy dataset
 4. Run the Agent-Based Model (ABM) by importing [TT_model.py](ABM/TT_model.py) into [run_model.py](script/run_model.py). This code is available in the run_model.py file.
 5. Create visulaizations of the model results by importing [visualization.py](script/visualization.py) from [run_model.py](script/run_model.py). This code is also available in the run_model.py file.
