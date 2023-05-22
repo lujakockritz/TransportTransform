@@ -11,7 +11,8 @@ The model code for the TransportTransform agent-based model
 ├── README.md
 ├── requirements.txt
 ├── ABM                <- Source code of the TransportTransform agent-based model
-└── script             <- Source code for this project to execude and visualise the TransportTransform model
+└── script             <- Source code for this project 
+                          to execute and visualise the TransportTransform model
 
 ```
 
