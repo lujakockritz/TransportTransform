@@ -403,13 +403,16 @@ class TransportModel(Model):
             preference_2_prob (float): Probability of preference 2 for agents.
             habit_on (bool): Indicates whether habit is enabled for agents.
             cluster_factor (float): Cluster factor used for creating agent networks.
+                Between 0 and 1; usually around 0.1 and 0.3
             occupancy_on (bool): Indicates whether occupancy module is enabled.
-            occupancy_function (str): Function used to calculate occupancy probability.
+            occupancy_function (str): Function used to calculate occupancy probability. 
+                Options are ; ['threshold', 'linear','exponential','sigmoid','logarithm']
             occupancy_parameter (float or tuple): Parameter(s) for the occupancy function.
             norms_on (bool): Indicates whether the social norms module is enabled.
             norm_threshold (float): Norm threshold value.
+                Between 0 and 1; usually around 0.4 and 0.6
             norm_prob (float): Probability of norm adherence.
-            network_type (str, optional): Type of network to create. Defaults to 'random'.
+            network_type (str, optional): Type of network to create. Defaults to 'random'. Another option is 'characteristics'
         """
         
         
