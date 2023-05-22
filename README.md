@@ -20,7 +20,7 @@ The model code for the TransportTransform agent-based model
 
 Python 3.6+
 
-Other dependencies are specified in the requirements.txt file.
+Other dependencies are specified in the [requirements.txt](requirements.txt) file.
 
 To install them run pip install -r requirements.txt.
 
