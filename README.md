@@ -37,10 +37,10 @@ Please [cite this project as described here](/CITATION.md).
 ## Running the code
 
 1. Import dependencies as described above
-2. Generate a dummy dataset using the (/script/random_datat_generator.py)
-3. Change the path in the (/script/run_model.py) to the (relative) location of the dummy dataset
-4. Run the ABM by importing (/ABM?TT_model.py) it into (/script/run_model.py). This code is avilable in the run_model.py file.
-5. Create visulaizations of the model results by importing visualization.py from (/script/run_model.py). This code is avilable in the run_model.py file.
+2. Generate a dummy dataset using the [script](random_datat_generator.py)
+3. Change the path in the [script](run_model.py) to the (relative) location of the dummy dataset
+4. Run the ABM by importing [ABM](TT_model.py) it into [script](run_model.py). This code is avilable in the run_model.py file.
+5. Create visulaizations of the model results by importing visualization.py from [script](run_model.py). This code is avilable in the run_model.py file.
 
 Alternatively, the model can be initialized directly to create a single run with the following code:
 
