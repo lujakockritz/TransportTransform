@@ -11,7 +11,8 @@ The model code for the TransportTransform agent-based model
 ├── README.md
 ├── requirements.txt
 ├── ABM                <- Source code of the TransportTransform agent-based model
-└── script             <- Source code for this project to execude and visualise the TransportTransform model
+└── script             <- Source code for this project 
+                          to execute and visualise the TransportTransform model
 
 ```
 
@@ -19,7 +20,7 @@ The model code for the TransportTransform agent-based model
 
 Python 3.6+
 
-Other dependencies are specified in the requirements.txt file.
+Other dependencies are specified in the [requirements.txt](requirements.txt) file.
 
 To install them run pip install -r requirements.txt.
 
@@ -36,18 +37,19 @@ Please [cite this project as described here](/CITATION.md).
 ## Running the code
 
 1. Import dependencies as described above
-2. Generate a dummy dataset using the (/script/random_datat_generator.py)
-3. Change the path in the (/script/run_model.py) to the (relative) location of the dummy dataset
-4. Run the ABM by importing (/ABM?TT_model.py) it into (/script/run_model.py). This code is avilable in the run_model.py file.
-5. Create visulaizations of the model results by importing visualization.py from (/script/run_model.py). This code is avilable in the run_model.py file.
+2. Generate a dummy dataset using [random_data_generator.py](script/random_data_generator.py)
+3. Change the path in the [run_model.py](script/run_model.py) to the relative location of the dummy dataset
+4. Run the Agent-Based Model (ABM) by importing [TT_model.py](ABM/TT_model.py) into [run_model.py](script/run_model.py). This code is available in the run_model.py file.
+5. Create visulaizations of the model results by importing [visualization.py](script/visualization.py) from [run_model.py](script/run_model.py). This code is also available in the run_model.py file.
 
 Alternatively, the model can be initialized directly to create a single run with the following code:
 
 ```python:
-TT_model = TransportModel(include_all, number_agents_included, step_number, preference_1_prob, preference_2_prob, 
-                 habit_on, cluster_factor, 
-                 occupancy_on, occupancy_function, occupancy_parameter,  
-                 norms_on, norm_threshold, norm_prob,)
+TT_model = TransportModel(include_all, number_agents_included, step_number, 
+           preference_1_prob, preference_2_prob, 
+           habit_on, cluster_factor, 
+           occupancy_on, occupancy_function, occupancy_parameter,  
+           norms_on, norm_threshold, norm_prob,)
 for i in range(step_number):    
   TT_model.step()
 ```
