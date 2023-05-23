@@ -45,10 +45,11 @@ Please [cite this project as described here](/CITATION.md).
 Alternatively, the model can be initialized directly to create a single run with the following code:
 
 ```python:
-TT_model = TransportModel(include_all, number_agents_included, step_number, preference_1_prob, preference_2_prob, 
-                 habit_on, cluster_factor, 
-                 occupancy_on, occupancy_function, occupancy_parameter,  
-                 norms_on, norm_threshold, norm_prob,)
+TT_model = TransportModel(include_all, number_agents_included, step_number, 
+           preference_1_prob, preference_2_prob, 
+           habit_on, cluster_factor, 
+           occupancy_on, occupancy_function, occupancy_parameter,  
+           norms_on, norm_threshold, norm_prob,)
 for i in range(step_number):    
   TT_model.step()
 ```
